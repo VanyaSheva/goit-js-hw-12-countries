@@ -1,0 +1,67 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+  /*
+   * CSS image reference example.
+   */
+  background-image: url('./images/ESA_root_pillars.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+.wrapper{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.countries-list{
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  font-family: 'Cairo', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+.countries-list__item{
+  margin-bottom: 30px;
+}
+.country{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.country_item{
+  font-size: 25px;
+}
+.country_item:not(:last-child){
+  margin-bottom: 10px;
+
+}
+.country_name{
+  text-align: center;
+  font-size: 40px;
+}
+.country-languages-list{
+  display: flex;
+  list-style-type: none;
+}
+.country-languages-list__item{
+  font-size: 28px;
+}
+.country_flag{
+  width: 200px;
+  height: 100px;
+}
